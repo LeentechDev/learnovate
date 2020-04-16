@@ -524,9 +524,9 @@ nav hr {
 .top-bar .social-icons li a {
   font-size: 16px;
 }
-.top-bar .logo-light {
+/* .top-bar .logo-light {
   display: none;
-}
+} */
 .top-bar .utility-menu .utility-inner {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
