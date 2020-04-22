@@ -7,7 +7,7 @@
 <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>Learnovate</title>
+        <title>Learnovate | Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,10 @@
 		<![endif]-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
         <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+		<style>
+			.mySlides {display:none}
+		</style>
     </head>
     <body>
     	<div class="loader">
@@ -321,24 +325,27 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="testimonials-slider text-center">
+							<div class="testimonials-slider text-center mySlides">
 								<ul class="slides">
 									<li>
 										<p class="lead">“We want to thank the Learnovate team, because they have always solved our doubts, and it is very easy to use and allows us to manage our information in a more effective way.”</p>
 										<p class="author"><strong>Jude Enriquez</strong><br>Managing Director, Online Mortgage Advisor</p>
 									</li>
-									
-									<!-- <li>
-										<p class="text-white lead">I was getting fed up with the hassle of setting up bloated WordPress themes. Luckily I've now found Pivot with Variant. Building pages in real-time without a CMS gives me all the power and flexibility I could want.</p>
-										<span class="author text-white">Elizabeth Atkinson - Shapewear Australia</span>
-									</li> -->
+								</ul>
+							</div>
+							<div class="testimonials-slider text-center mySlides">
+								<ul class="slides">
+									<li>
+										<p class="text-white lead">“I was getting fed up with the hassle of setting up bloated WordPress themes. Luckily I've now found Pivot with Variant. Building pages in real-time without a CMS gives me all the power and flexibility I could want.”</p>
+										<p class="author"><strong>Elizabeth Atkinson</strong><br>Shapewear Australia</p>
+									</li>
 								</ul>
 							</div>
 							<div class="btn-sect flex-align-center">
-								<a href="#">
+								<a onclick="plusDivs(-1)">
 									<img src="imgs/arrow_back.svg">
 								</a>
-								<a href="#">
+								<a onclick="plusDivs(1)">
 									<img src="imgs/arrow_next.svg">
 								</a>
 							</div>
@@ -359,7 +366,7 @@
 							<h1 class="title-of-sect">Don't wait, get started today!</h1>
 							<p class="subtitle-of-sect lead">It just takes 60 seconds to get started. If you are still unable to decide then contact our team, and we will help you out.</p>
 							<div class="flex-align-center btn-get-started">
-								<a href="#" class="btn btn-custom-transparent auto-margin-left auto-margin-right"><p>Get Demo Access</p></a>
+								<a href="pages/package.html" class="btn btn-custom-transparent auto-margin-left auto-margin-right"><p>Get Demo Access</p></a>
 							</div>
 						</div>
 					</div>
@@ -421,7 +428,8 @@
         <script src="js/twitterFetcher_v10_min.js"></script>
         <script src="js/lightbox.min.js"></script>
         <script src="js/jquery.countdown.min.js"></script>
-        <script src="js/scripts.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/custom.js"></script>
     </body>
 </html>
 				

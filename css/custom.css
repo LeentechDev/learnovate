@@ -39,6 +39,12 @@ p{
     color: #303030;
 }
 
+.btn-black.btn-filled {
+    background: #303030;
+        color: #fff;
+        border-color: #303030;
+}
+
 .no-margin-top{
     margin-top: 0 !important;
 }
@@ -102,7 +108,7 @@ footer .row .great-768{
 header.fullscreen-element .overlay:before, .image-divider.overlay:before {
     opacity: 0.7;
 }
-header.centered-text h1 {
+header.centered-text h1, .package-first-sect h1{
     margin-top: 50px;
     font-size: 92px;
     line-height: 96px;
@@ -476,6 +482,10 @@ section.duplicatable-content {
     margin-right: 24px;
 }
 
+.fifth-sect .testimonials-slider{
+    animation: fading 5s;
+}
+
 .sixth-sect{
     background: #02894B !important;
     mix-blend-mode: normal;
@@ -491,6 +501,29 @@ section.duplicatable-content {
 
 .sixth-sect::before{
     background-color: transparent;
+}
+
+.package-first-sect{
+    position: relative;
+    padding-top: 130px;
+}
+
+.package-first-sect .float-9{
+    top: 237px;
+    right: 0;
+}
+
+.package-first-sect .row.packages{
+    background: #fff;
+}
+
+.package-first-sect .float-10{
+    top: 248px;
+    left: -80px;
+}
+
+.package-first-sect .comparison{
+    margin-top: 50px;
 }
 
 .name-of-sect{
@@ -567,7 +600,7 @@ section.duplicatable-content {
     .btn-custom-white p, .btn-custom-transparent p{
         font-size: 15px;
     }
-    header.centered-text h1 {
+    header.centered-text h1, .package-first-sect h1 {
         margin-top: 0;
         font-size: 43px;
         line-height: 50px;
@@ -750,7 +783,7 @@ section.duplicatable-content {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    header.centered-text h1 {
+    header.centered-text h1, .package-first-sect h1 {
         font-size: 82px;
         line-height: 87px;
         padding-left: 12%;
