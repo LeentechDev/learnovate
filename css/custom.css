@@ -506,6 +506,8 @@ section.duplicatable-content {
 .package-first-sect{
     position: relative;
     padding-top: 130px;
+    padding-bottom: 64px;
+    background: #F7F7F7;
 }
 
 .package-first-sect .float-9{
@@ -524,6 +526,99 @@ section.duplicatable-content {
 
 .package-first-sect .comparison{
     margin-top: 50px;
+}
+
+.package-second-sect .package-title-of-sect, .package-second-sect .subtitle-of-sect{
+    padding-right: 10%;
+}
+
+.package-second-sect .field-items{
+    position: relative;
+}
+
+.package-second-sect .field-items label{
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    font-family: Avenir;
+    font-weight: normal;
+    color: #666666;
+}
+
+.package-second-sect .field-items input, .package-second-sect .field-items textarea{
+    resize: none;
+
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+    color: #303030;
+    padding: 16px 24px;
+    border: 1px solid #B2B2B2;
+    margin: 12px 0;
+    font-family: Avenir;
+    transition: border-color 0.2s ease;
+}
+
+.package-second-sect .field-items input:focus, .package-second-sect .field-items textarea:focus {
+    outline: none !important;
+    border: 1px solid #02894B;
+}
+
+@supports (not (-ms-ime-align:auto)) {
+    label {
+        font-size: 18px;
+        line-height: 30px;
+        transform: translate(24px, 17px);
+        transition: all 0.2s ease-out;
+    }
+    
+    input:focus + label,
+    input:not(:placeholder-shown) + label {
+        font-size: 12px;
+        line-height: 10px;
+        background: #F7F7F7;
+        padding: 2px 6px;
+        transform: translate(24px, -6px);
+    }
+    
+    textarea:focus + label,
+    textarea:not(:placeholder-shown) + label {
+        font-size: 12px;
+        line-height: 10px;
+        background: #F7F7F7;
+        padding: 2px 6px;
+        transform: translate(24px, -6px);
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+.package-second-sect .field-items input::-webkit-outer-spin-button,
+.package-second-sect .field-items input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.package-second-sect .field-items input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.package-second-sect .field-items .field-submit{
+    margin-top: 26px;
+}
+
+.package-second-sect .field-items .field-submit .btn-custom-green {
+    margin: auto 0 auto;
+}
+
+.package-second-sect .float-11{
+    right: -100px;
+    bottom: 12%;
+    transform: rotate(90deg);
+}
+
+.package-second-sect {
+    background: #fff !important;
 }
 
 .name-of-sect{
@@ -552,6 +647,15 @@ section.duplicatable-content {
     color: #666666;
     font-family: Avenir;
     margin-bottom: 40px !important;
+}
+
+.package-title-of-sect{
+    font-size: 30px;
+    line-height: 45px;
+    color: #303030;
+    font-weight: bold;
+    margin: 5px 0 16px;
+    font-family: HelveticaNowDisplay;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -600,10 +704,16 @@ section.duplicatable-content {
     .btn-custom-white p, .btn-custom-transparent p{
         font-size: 15px;
     }
-    header.centered-text h1, .package-first-sect h1 {
+    header.centered-text h1{
         margin-top: 0;
         font-size: 43px;
         line-height: 50px;
+    }
+    .package-first-sect h1 {
+        margin-top: 0;
+        font-size: 52px;
+        line-height: 57px;
+        padding-left: 6%;
     }
     p.lead{
         font-size: 14px;
@@ -705,6 +815,29 @@ section.duplicatable-content {
         padding: 20px 0;
         height: auto;
     }
+    .package-bar.simple-bar .logo {
+        bottom: 0;
+    }
+    .package-first-sect {
+        padding-top: 90px;
+    }
+    .package-first-sect .comparison {
+        margin-top: 10px;
+    }
+    .package-second-sect .package-title-of-sect{
+        font-size: 30px;
+        line-height: 35px;
+        max-width: 550px;
+    }
+    .package-second-sect .subtitle-of-sect {
+        margin-bottom: 15px !important;
+    }
+    .package-second-sect .g-recaptcha {
+        display: none;
+    }
+    .package-second-sect .btn-custom-green{
+        margin-top: 0 !important;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
@@ -751,6 +884,11 @@ section.duplicatable-content {
     section.duplicatable-content {
         padding-bottom: 40px;
     }
+    
+    .package-first-sect h1 {
+        font-size: 43px;
+        line-height: 50px;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 375px) {
@@ -780,6 +918,16 @@ section.duplicatable-content {
         padding-left: 10%;
         padding-right: 10%;
     }
+    .package-first-sect .comparison{
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    .package-first-sect h1 {
+        font-size: 52px;
+        line-height: 57px;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -788,6 +936,9 @@ section.duplicatable-content {
         line-height: 87px;
         padding-left: 12%;
         padding-right: 12%;
+    }
+    .package-first-sect h1 {
+        padding-left: 6%;
     }
     p.lead{
         font-size: 16px;
@@ -834,6 +985,14 @@ section.duplicatable-content {
     }
     .third-sect .pricing-table:last-child {
         border-left: 1px solid rgba(2, 137, 75, 0.35);
+    }
+    .package-second-sect .btn-custom-green{
+        margin-top: -10px;
+        min-width: 100px;
+    }
+    .package-second-sect .g-recaptcha {
+        transform:scale(0.90);
+        transform-origin:0 0;
     }
 }
 

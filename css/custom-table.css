@@ -5,7 +5,7 @@
     margin:0 auto;
     font:13px/1.4 Avenir;
     text-align:center;
-    padding:10px;
+    padding:10px 0;
     z-index: 1;
     position: relative;
   }
@@ -31,9 +31,11 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #313131;
+    border-top: 1px solid #F2F2F2;
     font-weight: bold !important;
     border-bottom: 0 !important;
     padding-top: 33px !important;
+    padding-bottom: 0 !important;
     /* font-size:18px; */
   }
   
@@ -49,6 +51,10 @@
       color: #4F4F4F;
       font-family: HelveticaNowDisplay;
       font-weight: bold;
+  }
+
+  .compare-title{
+    background: #fff;
   }
 
   .comparison .compare-row .offer{
@@ -77,7 +83,7 @@
   }
   
   .comparison .tl2 {
-    border-right:0;
+    border: 0;
   }
   
   .comparison .qbse {
@@ -167,10 +173,12 @@
 
   .comparison thead tr:first-child th:first-child{
     background: transparent;
+    border-left: 0;
   }
 
   .comparison thead tr th:first-child, .comparison tbody tr td:first-child{
     background: #fff;
+    border-left: 1px solid #F2F2F2;
   }
   
   @media (max-width: 767px) {
@@ -220,7 +228,32 @@
     .comparison .price-buy {
       margin-top:10px;
     }
-    .compare-heading {
-    font-size:13px;
+  .comparison .price-monthly p, .compare-heading {
+    font-size: 12px;
+    line-height: 16px;
   }
+  .comparison .price-monthly p {
+    margin-top: 2px;
   }
+  .comparison .price-info {
+    padding-top: 0;
+  }
+  .comparison .price-now p {
+    font-size: 25px;
+    line-height: 31px;
+  }
+}
+
+@media (max-width: 425px) {
+  .comparison .price-now p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .comparison .price-monthly p, .compare-heading {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .comparison .price-info {
+    padding: 0 5px 33px;
+  }
+}
