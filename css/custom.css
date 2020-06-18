@@ -509,7 +509,8 @@ section.duplicatable-content {
 .package-first-sect{
     position: relative;
     padding-top: 130px;
-    padding-bottom: 64px;
+    /* padding-bottom: 64px;  */ /* For Packages */
+    padding-bottom: 0;
     background: #F7F7F7;
 }
 
